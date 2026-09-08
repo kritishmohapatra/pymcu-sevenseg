@@ -1,0 +1,76 @@
+<svg width="860" height="230" viewBox="0 0 860 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="860" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040D08"/>
+      <stop offset="1" stop-color="#0A1F14"/>
+    </linearGradient>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Box -->
+  <rect width="860" height="230" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="858" height="228" rx="15" stroke="#133822" stroke-width="1.5"/>
+
+  <!-- Left: PyMCU Snake on Chip (Green Aesthetic) -->
+  <g transform="translate(45, 30)">
+    <!-- IC Chip Base -->
+    <path d="M75 145 L15 110 L85 75 L145 110 Z" fill="#0D1711" stroke="#1B3A28" stroke-width="2"/>
+    <path d="M15 110 L15 125 L75 160 L75 145 Z" fill="#070E0A"/>
+    <path d="M75 145 L75 160 L145 125 L145 110 Z" fill="#112218"/>
+
+    <!-- Chip Pins Left -->
+    <path d="M22 118 L8 126 L2 135" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M35 125 L21 133 L15 142" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M48 132 L34 140 L28 149" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M61 139 L47 147 L41 156" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Chip Pins Right -->
+    <path d="M90 148 L104 156 L110 165" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M103 141 L117 149 L123 158" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M116 134 L130 142 L136 151" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M129 127 L143 135 L149 144" stroke="#719080" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Green PyMCU Snake Body -->
+    <path d="M70 115 C50 115 45 95 65 85 C85 75 110 80 105 105 C100 125 65 130 50 115 C40 105 45 90 60 70 C70 55 55 40 40 45 C30 50 32 62 45 65" 
+          stroke="#059669" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow-green)"/>
+    <path d="M70 115 C50 115 45 95 65 85 C85 75 110 80 105 105 C100 125 65 130 50 115 C40 105 45 90 60 70 C70 55 55 40 40 45 C30 50 32 62 45 65" 
+          stroke="#10B981" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Snake Head & Eye -->
+    <circle cx="34" cy="48" r="3" fill="#040D08"/>
+    <!-- Snake Tongue -->
+    <path d="M22 55 Q16 57 12 55 M16 57 L13 62" stroke="#34D399" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Right: Header & Titles -->
+  <g transform="translate(230, 48)">
+    <!-- PyMCU Tag Badge -->
+    <rect x="0" y="0" width="75" height="22" rx="6" fill="#059669"/>
+    <text x="37.5" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PyMCU</text>
+
+    <!-- Library Title -->
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="800" fill="#F0FDF4" letter-spacing="-0.5">
+      pymcu-sevenseg
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#86EFAC">
+      Zero-heap, AOT bare-metal 7-segment driver for ATmega328P / Arduino Uno
+    </text>
+
+    <!-- Feature Tags -->
+    <g transform="translate(0, 112)">
+      <rect x="0" y="0" width="135" height="24" rx="12" fill="#064E3B"/>
+      <text x="67.5" y="16" font-family="sans-serif" font-size="11" fill="#A7F3D0" text-anchor="middle">Common Anode/Cathode</text>
+
+      <rect x="145" y="0" width="95" height="24" rx="12" fill="#064E3B"/>
+      <text x="192.5" y="16" font-family="sans-serif" font-size="11" fill="#A7F3D0" text-anchor="middle">ASCII &amp; Symbols</text>
+
+      <rect x="250" y="0" width="85" height="24" rx="12" fill="#064E3B"/>
+      <text x="292.5" y="16" font-family="sans-serif" font-size="11" fill="#A7F3D0" text-anchor="middle">DP Control</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymcu-sevenseg"
+version = "0.1.0"
+description = "A zero-heap, AOT-compilable 7-segment display driver for PyMCU targeting AVR/ATmega328P"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Kritish Mohapatra" }
+]
+keywords = [
+    "pymcu",
+    "embedded",
+    "avr",
+    "atmega328p",
+    "7segment",
+    "micropython"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Embedded Systems"
+]
+
+[project.urls]
+Homepage = "https://github.com/kritishmohapatra/pymcu-sevenseg"
+Repository = "https://github.com/kritishmohapatra/pymcu-sevenseg.git"
+Issues = "https://github.com/kritishmohapatra/pymcu-sevenseg/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sevenseg"]
