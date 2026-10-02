@@ -284,13 +284,21 @@ class SevenSeg:
                 self.pa.value(0); self.pb.value(0); self.pc.value(1); self.pd.value(0); self.pe.value(1); self.pf.value(0); self.pg.value(1)
             elif digit == 111:  # 'o'
                 self.pa.value(0); self.pb.value(0); self.pc.value(1); self.pd.value(1); self.pe.value(1); self.pf.value(0); self.pg.value(1)
+            elif digit == 112:  # 'p'
+                self.pa.value(1); self.pb.value(1); self.pc.value(0); self.pd.value(0); self.pe.value(1); self.pf.value(1); self.pg.value(1)
+            elif digit == 113:  # 'q'
+                self.pa.value(1); self.pb.value(1); self.pc.value(1); self.pd.value(0); self.pe.value(0); self.pf.value(1); self.pg.value(1)
             elif digit == 114:  # 'r'
                 self.pa.value(0); self.pb.value(0); self.pc.value(0); self.pd.value(0); self.pe.value(1); self.pf.value(0); self.pg.value(1)
+            elif digit == 115:  # 's'
+                self.pa.value(1); self.pb.value(0); self.pc.value(1); self.pd.value(1); self.pe.value(0); self.pf.value(1); self.pg.value(1)
+            elif digit == 116:  # 't'
+                self.pa.value(0); self.pb.value(0); self.pc.value(0); self.pd.value(1); self.pe.value(1); self.pf.value(1); self.pg.value(1)
             elif digit == 117:  # 'u'
                 self.pa.value(0); self.pb.value(0); self.pc.value(1); self.pd.value(1); self.pe.value(1); self.pf.value(0); self.pg.value(0)
             elif digit == 121:  # 'y'
                 self.pa.value(0); self.pb.value(1); self.pc.value(1); self.pd.value(1); self.pe.value(0); self.pf.value(1); self.pg.value(1)
-
+            
             # Symbols
             elif digit == 45:  # '-'
                 self.pa.value(0); self.pb.value(0); self.pc.value(0); self.pd.value(0); self.pe.value(0); self.pf.value(0); self.pg.value(1)
